@@ -155,6 +155,9 @@ int main(void)
 
     ADC_SoftwareStartConv(ADC3);
 
+    USART1_puts("Hello World!\r\n");
+    USART1_puts("Just for STM32F429I Discovery verify USART1 with USB TTL Cable\r\n");
+
     while(1)
     {
         LED3_Toggle();
